@@ -1,0 +1,41 @@
+ul.calendar-days li:nth-child(7n+5)+li, ul.calendar-days li:nth-child(7n+6)+li {
+    background: red;
+}
+
+.task2 div:nth-child(8)~div {
+    display: none;
+}
+
+ul.customed-list li:nth-child(2n) {
+    list-style-type: none;
+}
+ul.customed-list li:nth-child(2n):before {
+    content: "@ ";
+}
+ul.customed-list li:nth-child(2n+1) {
+    list-style-type: none;
+}
+ul.customed-list li:nth-child(2n+1):before {
+    content: "✬ ";
+}
+ul.customed-list li {
+    padding: 10px 0;
+}
+ul.customed-list li:first-child {
+    padding-top: 0;
+}
+ul.customed-list li:last-child {
+    padding-bottom: 0;
+}
+
+.extra-task ul.menu li {
+    padding: 0 5px;
+}
+
+.extra-task ul.menu li:nth-last-child(4):first-child~li {
+    padding: 0 15px;
+}
+
+.extra-task ul.menu li:nth-last-child(4):first-child {
+    padding: 0 15px 0 5px;
+}
